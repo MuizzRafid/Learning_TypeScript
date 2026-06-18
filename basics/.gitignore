@@ -1,0 +1,10 @@
+node_modules
+dist
+
+oop.ts
+ArrayEnum.ts
+typesInTs.ts
+unionAndany.ts
+interfaceTs.ts
+
+objectTs.ts
