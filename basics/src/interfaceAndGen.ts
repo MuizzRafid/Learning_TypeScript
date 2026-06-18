@@ -38,3 +38,33 @@ interface TeaRatings {
 const ratings: TeaRatings = {
   milkTea: 4.5,
 };
+
+interface Shop {
+  readonly id: number;
+  name: string;
+}
+
+// interface merging ... if i declare interface with same name
+//then when i will use that i have satisfy all of them
+
+interface User {
+  name: string;
+}
+
+interface User {
+  age: number;
+}
+
+const u: User = {
+  name: "muizz",
+  age: 22,
+};
+
+interface A {
+  a: string;
+}
+interface B {
+  b: string;
+}
+
+interface C extends A, B {}
