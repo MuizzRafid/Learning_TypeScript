@@ -15,10 +15,10 @@ interface TeaRecipe {
   water: number;
   milk: number;
 }
-
+//This class promises to have all the properties and methods defined in TeaRecipe
 class MilkTea implements TeaRecipe {
   water = 10;
-  milk = 50;
+  milk = 33;
 }
 
 interface cupSize {

@@ -11,12 +11,14 @@ const milktea: Tea = {
   price: 20,
 };
 
+//function interface
 interface DiscountCal {
   (price: number): number;
 }
 
 const apply50: DiscountCal = (p) => p * 0.5;
 
+//method signature in interface
 interface TeaMachine {
   start(): void;
   stop(): void;
@@ -30,7 +32,12 @@ const machine: TeaMachine = {
     console.log("stop");
   },
 };
+//index signature
 
+//TypeScript sees:
+
+//key = "milkTea"
+//value = 4.5
 interface TeaRatings {
   [flavour: string]: number;
 }
