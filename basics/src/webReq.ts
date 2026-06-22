@@ -1,6 +1,13 @@
 import axios from "axios";
 import type { AxiosResponse } from "axios";
 
+// interface Todo {
+//   userId: number;
+//   id: number;
+//   title: string;
+//   completed: boolean;
+// }
+
 interface Todo {
   userId: number;
   id: number;
