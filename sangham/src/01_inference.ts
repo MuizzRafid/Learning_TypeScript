@@ -11,3 +11,7 @@ const site = "acedevhub"; //it seestthe exact literal "acedevhub"
 export function add(a: number, b: number): number {
   return a + b;
 }
+
+//i should also annotate when the is not obvious
+
+let maybe: string | number;
