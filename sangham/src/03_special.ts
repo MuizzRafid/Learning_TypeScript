@@ -21,5 +21,9 @@ function fail(msg: string): never {
 
 const valueAny: any = JSON.parse('{"x":1}');
 
-valueAny.notThere.toFixed(2); //this will run at compile time but explode at run time
+console.log(typeof valueAny);
+const stringifyValue: any = JSON.stringify(valueAny);
+console.log(typeof stringifyValue);
+
+//valueAny.notThere.toFixed(2); //this will run at compile time but explode at run time
 //cause notThere doesn't exist in the object
