@@ -1,8 +1,2 @@
 node_modules
 dist
-014_optional_default.ts
-
-010_arrays_basics.ts
-011_readonly_arrays.ts
-012_tuples.ts
-013_params_annotions.ts
