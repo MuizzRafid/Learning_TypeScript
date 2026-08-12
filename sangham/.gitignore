@@ -1,2 +1,8 @@
 node_modules
 dist
+020_index_signatures.ts
+021_typesof.ts
+022_in_optional_nullish.ts
+023_generics_intro.ts
+024_generics_constraints.ts
+025_generics.getProp.ts
