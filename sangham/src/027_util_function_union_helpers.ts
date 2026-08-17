@@ -23,7 +23,7 @@ console.log(resultInfo);
 class User {
   constructor(
     public name: string,
-    age: number,
+    public age: number,
   ) {}
 
   greet() {
@@ -32,5 +32,17 @@ class User {
 }
 
 //Extrating the instance type
-
 type PersonInstanceN1 = InstanceType<typeof User>;
+
+//It's a tuple type — a fixed-length array where each position has its own type. It is not an object, and it is not a function —
+// it's a description of "three values, in this order: string, number,
+
+type PersonCtorArgN1 = ConstructorParameters<typeof User>;
+
+//ConstructorParameters return a tuple
+
+const resultInfo1: PersonCtorArgN1 = ["july", 20];
+console.log(resultInfo1);
+
+const InstanceUser: PersonInstanceN1 = new User(...resultInfo1);
+console.log(InstanceUser.greet());
