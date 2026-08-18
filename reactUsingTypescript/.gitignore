@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 public
+
+06_state.tsx
+07_events.tsx
+08_TypedUseReducer.tsx
+09_Uncontrolled.tsx
+010_Context.tsx
