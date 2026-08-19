@@ -1,10 +1,12 @@
 const raw = '{"id":1,"name":"july","hour":"important"}';
+//creating a string and the content is object.
 
 const risky = JSON.parse(raw) as { id: number; name: string };
+// then remove the string fold using parse
 
-console.log(risky.name);
+//console.log(risky.name);
 
-console.log(JSON.stringify(risky));
+//console.log(JSON.stringify(risky));
 
 type User22 = { id: number; name: string };
 
