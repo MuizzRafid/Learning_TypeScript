@@ -6,6 +6,8 @@ type Inter2 = { createdAt: Date };
 
 type Entity = Inter1 & Inter2; //must have both id and createdId
 
+type entity3 = Inter1 & Inter2 & Entity;
+
 const e: Entity = { id: "1", createdAt: new Date() };
 
 type NumberHolderUnique = { a: number };

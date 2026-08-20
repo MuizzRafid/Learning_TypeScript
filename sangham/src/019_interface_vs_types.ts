@@ -39,3 +39,16 @@ const unionType: test | test2 = { value: "alpha" };
 if ("value" in unionType) {
   console.log(unionType.value);
 }
+
+//             ***** Where to use  what
+//interface
+
+//1.You're describing an object shape that might be extended(lavrador extend dog)
+//2.It's a public API surface — component props, class contracts
+
+//type
+
+//1. You need a union (type Status = "idle" | "loading" | "success" | "error";)
+//2. You need a tuple (type Point = [x: number, y: number];)
+//3. You need a function type (type Adder = (a: number, b: number) => number;)
+//4. You need to derive a type from something else — mapped types, typeof, indexed access, conditional types

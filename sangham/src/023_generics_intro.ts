@@ -1,7 +1,7 @@
 //uderstand what is "type parameter" <T>
 //how typescript infers <T> from you arguments automatically
 
-// generic is a function where the types are blanks that i have to fill later
+// generic is a function where the types are blanks that i have to fill that later
 
 //<T> is a placeholder
 //ts will try to understand what T is

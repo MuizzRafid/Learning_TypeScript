@@ -1,4 +1,10 @@
+//Normal Array
 const xss = [1, 2, 88, 7];
+xss.push(8);
+for (let key in xss) {
+  console.log(xss[key], " ");
+}
+
 const ys: readonly number[] = [1, 2, 3];
 //same as ys new way of writing
 const yss: ReadonlyArray<number> = [1, 3, 4, 8];

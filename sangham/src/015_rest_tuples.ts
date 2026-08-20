@@ -26,7 +26,7 @@ console.log(makeRange(1, 5));
 console.log(makeRange(2, 10, 2));
 
 function draw(x: number, y: number) {
-  console.log(x, y);
+  console.log(x);
 }
 
 const points = [10, 20];
