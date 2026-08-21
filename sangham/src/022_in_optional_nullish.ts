@@ -8,6 +8,7 @@ function describeUserExample(u: UserExample) {
   if ("permissions" in u) {
     return `Admin ${u.permissions.join(",")}`;
   }
+
   return `User ${u.expiresAt.toISOString()}`;
 }
 

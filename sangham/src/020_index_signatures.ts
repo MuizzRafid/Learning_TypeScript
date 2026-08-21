@@ -1,6 +1,17 @@
 //what i am telling is
 //i have a key which is string and it map to a value which is number
 type NumberDict = { [k: string]: number };
+//this is the just a alternative syntax of {
+//likes: 20,
+//share:30,
+//}
+
+//[] -> An index signature is a TypeScript rule that tells TypeScript what kinds of
+//  keys an object can have and what type of value those keys contain.
+
+// here the what type of value likes can take wasn't mentioned  but typescript help to mention that
+//by doing this i don't even have to fix the key . like for likes and share they are decided but
+// for  k it can be anything
 
 const counters: NumberDict = {};
 counters["likes"] = 33;
